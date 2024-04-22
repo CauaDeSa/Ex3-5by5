@@ -26,13 +26,10 @@ do
         Console.Write("\nIs a ");
 
         if (sideA == sideB && sideB == sideC)
-            Console.Write("equilateral and ");
-
-        if (sideA != sideB && sideB != sideC && sideC != sideA)
+            Console.Write("equilateral triangle!");
+        else if (sideA != sideB && sideB != sideC && sideC != sideA)
             Console.WriteLine("scalene triangle!");
-
-        if (sideA == sideB || sideB == sideC || sideC == sideA)
-            Console.WriteLine("isoceles triangle!");
+            else Console.WriteLine("isoceles triangle!");
     }
     else
         Console.WriteLine("These aren't triangle sizes!");
